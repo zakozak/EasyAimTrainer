@@ -1,0 +1,141 @@
+.circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    visibility: hidden;
+  }
+  .wrapper {
+    position: relative;
+    width: 1600px;
+    height: 850px;
+    border: 1px solid #9a8866;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+  }
+
+  .menu {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: rgb(0, 0, 0); /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+
+  .menu button:hover {
+    color: #6e6c6c;
+  }
+
+  .menu a {
+    color: rgb(125, 125, 141);
+    position: relative;
+    left: 50%;
+    display: inline-block;
+    transform: translate(-50%, 0);
+    font-size: 150%;
+  }
+
+  .menu-right {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: rgb(0, 0, 0); /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+
+  .menu-right a {
+    color: rgb(125, 125, 141);
+    position: relative;
+    left: 50%;
+    display: inline-block;
+    transform: translate(-50%, 0);
+    font-size: 150%;
+  }
+
+  button {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Bender';
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    background-color: #9a8866;
+    padding: 4px 20px;
+    border-radius: 3px;
+    border: none;
+    opacity: 0.8;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004)
+  }
+
+  .easy {
+    background-color: red;
+  }
+
+  .customTime {
+    background:  #9a8866;
+    box-shadow: none;
+    font-size: 13px;
+    position: relative;
+    border: none;
+    width: 96px;
+    line-height: 28px;
+    height: 38px;
+    color: #000000;
+    z-index: 20000;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    font-family: 'Bender';
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+  }
+
+  .customTime::placeholder {
+    color :rgb(32, 31, 31);
+  }
+
+  body {
+       background-color:black;
+  }
+
+  .footer {
+   color: whitesmoke;
+   position : relative;
+   z-index: 1;
+   width: 1600px;
+   height: 25px;
+   font-size: 30px;
+   font-family: 'Bender';
+   left: 50%;
+   transform: translate(-50%, 0);
+   text-align: center;
+   display: inline-flex;
+   justify-content: space-around;
+   text-shadow: 1px 1px 1px rgb(175, 162, 162);
+  }
+
+.hearth {
+  color : red;
+  font-size: 28px;
+  padding-left: 5px;
+  text-align: center;
+}
+  
