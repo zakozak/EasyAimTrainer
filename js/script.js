@@ -33,6 +33,14 @@ let difficulty = 15,
 
 
 start.addEventListener('click', () => {
+    if(parseInt(countdown.innerHTML) < (time/1000)){    
+        reset();
+        hits.innerHTML = `HITS : 0`; 
+        score.innerHTML = `SCORE : 0`; 
+        countdown.innerHTML = "(づ￣ ³￣)づ";
+    }
+    
+
     circle.style.visibility = "visible";
     circle.style.top = randomX();
     circle.style.left = randomY();
@@ -63,6 +71,7 @@ rst.addEventListener('click', () => {
     hits.innerHTML = `HITS : 0`; 
     score.innerHTML = `SCORE : 0`; 
     countdown.innerHTML = "(づ￣ ³￣)づ";
+    time = 10000;
 })
 
 easy.addEventListener('click', () => {
@@ -170,7 +179,7 @@ hearth.addEventListener('mouseover', () => {
 })
 
 function timer() {
-    setTimeout(reset, time);
+    let timerIdR = setTimeout(reset, time);
     setTimeout(accuracyFunc, time - 1);
     let timerId = setInterval(() => {
         let timeLeft = parseInt(countdown.innerHTML);
@@ -185,7 +194,6 @@ function timer() {
             clearInterval(timerId);
         }
     }, 1000);
-
 }
 
 function reset() {
@@ -195,6 +203,7 @@ function reset() {
     circle.style.visibility = "hidden";
     counter = 0;
     clicks = 0;
+    lifeCount = 3;
 }
 
 function accuracyFunc() {
@@ -243,8 +252,10 @@ function Cykl() {
             lifeCount--;
             if(lifeCount < 1) {
                 reset();
-                time = 0;
+                time = 10000;
+                lifeCount = 3;
             }
+
         }
 }
 
